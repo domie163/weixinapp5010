@@ -1,0 +1,79 @@
+const menu = {
+    list() {
+        return [
+    {
+        "backMenu":[
+        ],
+        "frontMenu":[
+        ],
+        "hasBackLogin":"是",
+        "hasBackRegister":"否",
+        "hasFrontLogin":"否",
+        "hasFrontRegister":"否",
+        "roleName":"管理员",
+        "tableName":"users"
+    },
+    {
+        "backMenu":[
+			{
+                "child":[
+                    {
+						"appFrontIcon":"cuIcon-form",
+                        "buttons":[
+                            "查看",
+                            "新增",
+                            "修改",
+                            "删除"
+                        ],
+                        "menu":"师生健康",
+                        "menuJump":"列表",
+                        "tableName":"guanliliuy"
+                    }
+                ],
+                "menu":"师生健康"
+            }
+			,
+			{
+                "child":[
+                    {
+						"appFrontIcon":"cuIcon-form",
+                        "buttons":[
+                            "查看",
+                        ],
+                        "menu":"每日信息",
+                        "menuJump":"列表",
+                        "tableName":"meirixinxi"
+                    }
+                ],
+                "menu":"每日信息"
+            }
+            ,
+            {
+                "child":[
+                    {
+						"appFrontIcon":"cuIcon-activity",
+                        "buttons":[
+                            "查看"
+                        ],
+                        "menu":"公告资讯",
+                        "menuJump":"列表",
+                        "tableName":"news"
+                    }
+                ],
+                "menu":"公告资讯"
+            }
+        ],
+        "frontMenu":[
+        ],
+        "hasBackLogin":"是",
+        "hasBackRegister":"否",
+        "hasFrontLogin":"是",
+        "hasFrontRegister":"是",
+        "roleName":"防疫人员",
+        "tableName":"yonghu"
+    }
+]
+
+	}
+}
+export default menu;
